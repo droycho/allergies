@@ -27,4 +27,13 @@ public class AllergiesTest {
     expected.add("shellfish");
     assertEquals(expected, Allergies.allergies(4));
   }
+
+  @Test
+    public void isAllergies_forMultipleAllergies_outputString() {
+    Allergies allergies = new Allergies();
+    ArrayList<Object> expected = new ArrayList<Object>();
+    expected.add("shellfish");
+    expected.add("eggs");
+    assertEquals(expected, Allergies.allergies(5));
+  }
 }
